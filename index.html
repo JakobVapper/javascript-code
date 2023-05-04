@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="media/20230404_002822.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="media/Screenshot_20221024_100337.png" alt="#"></div>
-              <div class="swiper-slide"><img src="media/Screenshot_20221024_100620.png" alt="#"></div>
-              <div class="swiper-slide"><img src="media/Screenshot_20221024_100738.png" alt="#"></div>
+    <div class="carousel">
+        <div class="carousel__item">
+            <div class="image-container">
+                <img src="media/20230404_002822.jpg" alt="Picture" class="picture-1">
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
-          </div>
+        </div>
+        <div class="carousel__item">
+            <div class="image-container">
+                <img src="media/Screenshot_20221024_100337.png" alt="Picture" class="picture-2">
+            </div>
+        </div>
+        <div class="carousel__item">
+            <div class="image-container">
+                <img src="media/Screenshot_20221024_100620.png" alt="Picture" class="picture-3">
+            </div>
+        </div>
+        <div class="carousel__item">
+            <div class="image-container">
+                <img src="media/Screenshot_20221024_100738.png" alt="Picture" class="picture-4">
+            </div>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-  
-            direction: 'vertical',
-            loop: true,
 
-  
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-  
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-  
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
